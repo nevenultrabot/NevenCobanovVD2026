@@ -4,13 +4,16 @@
   <meta charset="UTF-8">
   <title>Picerija</title>
   <meta name="author" content="Neven Čobanov">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
   <div class="wrap">
-    <a href="index.html" class="logo">Picerija Dunavska</a>
+    <a href="index.html" class="logo">Picerija <span>Dunavska</span></a>
     <nav>
       <a href="index.html">Početna</a>
       <a href="meni.html" class="aktivna">Meni</a>
@@ -19,91 +22,107 @@
   </div>
 </header>
 
-<main class="wrap">
+<div class="zaglavlje-strane">
   <p class="naslov"><b>Meni i cene pica</b></p>
+  <p>Mala pica 24 cm, velika 32 cm. Cene su iste u lokalu i za dostavu.</p>
+</div>
 
-  <p>Sve pice su prečnika 32 cm (velika) ili 24 cm (mala). Cene su u dinarima i iste su u lokalu i za dostavu.</p>
+<section>
+  <div class="wrap dve-kolone gore">
+    <div>
+      <p><b>Pice</b></p>
+      <div class="stavka">
+        <div><h3>Margarita</h3><p>pelat, mocarela, bosiljak</p></div>
+        <span class="cena">690 / 920 din</span>
+      </div>
+      <div class="stavka">
+        <div><h3>Kapričoza</h3><p>pelat, kačkavalj, šunka, pečurke, masline</p></div>
+        <span class="cena">820 / 1090 din</span>
+      </div>
+      <div class="stavka">
+        <div><h3>Vezuvio</h3><p>pelat, kačkavalj, šunka</p></div>
+        <span class="cena">760 / 990 din</span>
+      </div>
+      <div class="stavka">
+        <div><h3>Ljuta</h3><p>pelat, kačkavalj, kulen, feferone</p></div>
+        <span class="cena">840 / 1120 din</span>
+      </div>
+      <div class="stavka">
+        <div><h3>Četiri sira</h3><p>mocarela, gorgonzola, parmezan, kačkavalj</p></div>
+        <span class="cena">880 / 1180 din</span>
+      </div>
+      <div class="stavka">
+        <div><h3>Vegetarijana</h3><p>pelat, kačkavalj, paprika, tikvica, pečurke</p></div>
+        <span class="cena">780 / 1030 din</span>
+      </div>
+      <p class="napomena">Prva cena je za malu, druga za veliku picu.</p>
+    </div>
+    <img src="slike/ljuta-pica-feferone.jpg" width="700" height="895">
+  </div>
+</section>
 
-  <p><b>Pice</b></p>
-  <table>
-    <tr>
-      <th>Pica</th>
-      <th>Sastojci</th>
-      <th>Mala</th>
-      <th>Velika</th>
-    </tr>
-    <tr>
-      <td>Margarita</td>
-      <td>pelat, mocarela, bosiljak</td>
-      <td class="cena">690</td>
-      <td class="cena">920</td>
-    </tr>
-    <tr>
-      <td>Kapričoza</td>
-      <td>pelat, kačkavalj, šunka, pečurke, masline</td>
-      <td class="cena">820</td>
-      <td class="cena">1090</td>
-    </tr>
-    <tr>
-      <td>Vezuvio</td>
-      <td>pelat, kačkavalj, šunka</td>
-      <td class="cena">760</td>
-      <td class="cena">990</td>
-    </tr>
-    <tr>
-      <td>Ljuta</td>
-      <td>pelat, kačkavalj, kulen, feferone</td>
-      <td class="cena">840</td>
-      <td class="cena">1120</td>
-    </tr>
-    <tr>
-      <td>Četiri sira</td>
-      <td>mocarela, gorgonzola, parmezan, kačkavalj</td>
-      <td class="cena">880</td>
-      <td class="cena">1180</td>
-    </tr>
-    <tr>
-      <td>Vegetarijana</td>
-      <td>pelat, kačkavalj, paprika, tikvica, pečurke</td>
-      <td class="cena">780</td>
-      <td class="cena">1030</td>
-    </tr>
-  </table>
+<section class="krem">
+  <div class="wrap dve-kolone gore">
+    <div>
+      <p><b>Pica na parče</b></p>
+      <div class="stavka">
+        <div><h3>Parče margarite</h3><p>uvek vruće, na šanku</p></div>
+        <span class="cena">250 din</span>
+      </div>
+      <div class="stavka">
+        <div><h3>Parče vezuvia ili ljute</h3><p>može za poneti</p></div>
+        <span class="cena">270 din</span>
+      </div>
+    </div>
+    <div>
+      <p><b>Pića</b></p>
+      <div class="stavka">
+        <div><h3>Coca-Cola, Fanta, Sprite</h3><p>0,33 l</p></div>
+        <span class="cena">220 din</span>
+      </div>
+      <div class="stavka">
+        <div><h3>Domaća limunada</h3><p>0,4 l</p></div>
+        <span class="cena">250 din</span>
+      </div>
+      <div class="stavka">
+        <div><h3>Točeno pivo</h3><p>0,5 l</p></div>
+        <span class="cena">280 din</span>
+      </div>
+      <div class="stavka">
+        <div><h3>Espreso</h3><p>sa mlekom +30 din</p></div>
+        <span class="cena">170 din</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <img class="slika" src="slike/pica-kapricoza.jpg" width="900" height="600">
-
-  <p><b>Pica na parče</b></p>
-  <p>Parče pice (margarita, vezuvio ili ljuta) je 250 dinara. Parče se uzima na šanku i može za poneti.</p>
-
-  <p><b>Pića</b></p>
-  <table>
-    <tr>
-      <th>Piće</th>
-      <th>Cena</th>
-    </tr>
-    <tr>
-      <td>Coca-Cola, Fanta, Sprite 0,33</td>
-      <td class="cena">220</td>
-    </tr>
-    <tr>
-      <td>Domaća limunada</td>
-      <td class="cena">250</td>
-    </tr>
-    <tr>
-      <td>Točeno pivo 0,5</td>
-      <td class="cena">280</td>
-    </tr>
-    <tr>
-      <td>Espreso</td>
-      <td class="cena">170</td>
-    </tr>
-  </table>
-
-  <p>Za poručivanje i <a href="kontakt.html">ovde</a> pozovi nas telefonom.</p>
-</main>
+<section class="centar">
+  <div class="wrap">
+    <p><b>Gladan si?</b></p>
+    <p>Za poručivanje pozovi nas ili pogledaj kako radi <a href="kontakt.html">ovde</a>.</p>
+    <a href="tel:+381215550147" class="dugme">Pozovi 021 555 0147</a>
+  </div>
+</section>
 
 <footer>
-  <p>&copy; 2026 Neven Čobanov</p>
+  <div class="wrap">
+    <div>
+      <h3>Picerija Dunavska</h3>
+      <p>Italijanska pica iz peći na drva u centru Novog Sada.</p>
+    </div>
+    <div>
+      <h3>Adresa</h3>
+      <p>Dunavska 14, Novi Sad</p>
+      <p><a href="tel:+381215550147">021 555 0147</a></p>
+    </div>
+    <div>
+      <h3>Radno vreme</h3>
+      <p>Pon - Čet: 10 - 23h</p>
+      <p>Pet - Sub: 10 - 24h</p>
+      <p>Nedelja: 12 - 22h</p>
+    </div>
+  </div>
+  <p class="copy">&copy; 2026 Neven Čobanov</p>
 </footer>
 
 </body>

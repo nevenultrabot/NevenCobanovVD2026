@@ -1,4 +1,4 @@
-/* Picerija Dunavska - stil */
+/* Picerija Dunavska - glavni stil */
 
 * {
   box-sizing: border-box;
@@ -6,74 +6,30 @@
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #333;
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  color: #3a3330;
   background: #fff;
 }
 
-h1, h2 {
-  font-family: Georgia, "Times New Roman", serif;
-  color: #9e1b1b;
-  line-height: 1.3;
-}
-
-h1 {
-  font-size: 30px;
-  margin-top: 10px;
+h1, h2, h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  color: #2b211c;
+  line-height: 1.25;
+  margin: 0 0 15px;
 }
 
 h2 {
-  font-size: 22px;
-  margin-top: 30px;
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 21px;
 }
 
 a {
-  color: #9e1b1b;
-}
-
-.wrap {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-/* zaglavlje i meni */
-header {
-  background: #9e1b1b;
-  color: #fff;
-}
-
-header .wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-
-.logo {
-  font-family: Georgia, serif;
-  font-size: 24px;
-  font-weight: bold;
-  color: #fff;
-  text-decoration: none;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  margin-left: 20px;
-}
-
-nav a:hover,
-nav a.aktivna {
-  text-decoration: underline;
-}
-
-main {
-  padding-bottom: 30px;
+  color: #b3261e;
 }
 
 img {
@@ -82,52 +38,291 @@ img {
   display: block;
 }
 
-.slika {
-  margin: 15px 0;
-  border: 1px solid #ddd;
+.wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.info {
-  background: #f6f1e9;
-  border-left: 4px solid #9e1b1b;
-  padding: 10px 15px;
+/* ---------- header ---------- */
+header {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
-/* tabela sa cenama */
-table {
+header .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.logo {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #b3261e;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #2b211c;
+}
+
+nav a {
+  color: #2b211c;
+  text-decoration: none;
+  margin-left: 28px;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+nav a:hover,
+nav a.aktivna {
+  color: #b3261e;
+}
+
+/* ---------- hero (pocetna) ---------- */
+.hero {
+  background: #2b211c url("slike/picerija-novi-sad.jpg") center / cover no-repeat;
+  position: relative;
+  color: #fff;
+  padding: 140px 0 130px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 12, 8, 0.6);
+}
+
+.hero .wrap {
+  position: relative;
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: 50px;
+  max-width: 650px;
+}
+
+.hero p {
+  font-size: 20px;
+  max-width: 560px;
+  margin: 0 0 30px;
+}
+
+.dugme {
+  display: inline-block;
+  background: #b3261e;
+  color: #fff;
+  text-decoration: none;
+  padding: 13px 30px;
+  border-radius: 3px;
+  font-weight: 700;
+}
+
+.dugme:hover {
+  background: #8f1d17;
+}
+
+.dugme.svetlo {
+  background: transparent;
+  border: 2px solid #fff;
+  margin-left: 10px;
+  padding: 11px 28px;
+}
+
+/* naslov na unutrasnjim stranicama */
+.zaglavlje-strane {
+  background: #2b211c;
+  color: #f3e9dc;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.zaglavlje-strane h1 {
+  color: #fff;
+  font-size: 42px;
+  margin-bottom: 5px;
+}
+
+.zaglavlje-strane p {
+  margin: 0;
+}
+
+/* ---------- sekcije ---------- */
+section {
+  padding: 70px 0;
+}
+
+.krem {
+  background: #faf5ee;
+}
+
+.centar {
+  text-align: center;
+}
+
+.podnaslov {
+  color: #b3261e;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.dve-kolone {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.dve-kolone.gore {
+  align-items: start;
+}
+
+.dve-kolone img {
+  border-radius: 4px;
   width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 20px;
+  max-height: 480px;
+  object-fit: cover;
 }
 
-th, td {
+.dve-kolone img.uska {
+  max-width: 380px;
+  justify-self: center;
+}
+
+.tri-kolone {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 35px;
   text-align: left;
-  padding: 8px;
-  border-bottom: 1px solid #ddd;
 }
 
-th {
-  background: #f6f1e9;
+.kartica {
+  background: #fff;
+  border-top: 4px solid #b3261e;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-td.cena {
+.kartica img {
+  height: 210px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.kartica div {
+  padding: 20px;
+}
+
+.kartica p {
+  margin: 0;
+}
+
+/* ---------- meni ---------- */
+.stavka {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #d8cbbb;
+  padding: 14px 0;
+}
+
+.stavka h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.stavka p {
+  margin: 0;
+  font-size: 15px;
+  color: #7a6e66;
+}
+
+.cena {
+  font-weight: 700;
+  color: #b3261e;
   white-space: nowrap;
+  padding-left: 20px;
+}
+
+.napomena {
+  font-size: 15px;
+  color: #7a6e66;
+}
+
+/* ---------- kontakt ---------- */
+.info p {
+  margin: 0 0 18px;
+}
+
+.info strong {
+  color: #2b211c;
 }
 
 .mapa {
   width: 100%;
-  height: 320px;
+  height: 380px;
   border: 0;
+  border-radius: 4px;
 }
 
+.radno-vreme {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.radno-vreme li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eadfd2;
+  padding: 8px 0;
+}
+
+/* ---------- footer ---------- */
 footer {
-  background: #eee;
-  text-align: center;
-  padding: 15px;
-  font-size: 14px;
+  background: #2b211c;
+  color: #cbbfb3;
+  padding: 45px 0 20px;
+  font-size: 15px;
+}
+
+footer .wrap {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 30px;
+}
+
+footer h3 {
+  color: #fff;
+  font-size: 19px;
 }
 
 footer p {
-  margin: 0;
+  margin: 0 0 6px;
+}
+
+footer a {
+  color: #cbbfb3;
+}
+
+.copy {
+  border-top: 1px solid #4a3c34;
+  margin-top: 30px;
+  padding-top: 18px;
+  text-align: center;
 }
 

@@ -4,13 +4,16 @@
   <meta charset="UTF-8">
   <title>Picerija</title>
   <meta name="author" content="Neven Čobanov">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
   <div class="wrap">
-    <a href="index.html" class="logo">Picerija Dunavska</a>
+    <a href="index.html" class="logo">Picerija <span>Dunavska</span></a>
     <nav>
       <a href="index.html">Početna</a>
       <a href="meni.html">Meni</a>
@@ -19,27 +22,57 @@
   </div>
 </header>
 
-<main class="wrap">
+<div class="zaglavlje-strane">
   <p class="naslov"><b>Kontakt i dostava pice</b></p>
+  <p>Dunavska 14, Novi Sad - preko puta Dunavskog parka</p>
+</div>
 
-  <p class="info">
-    <strong>Picerija Dunavska</strong><br>
-    Dunavska 14, 21000 Novi Sad<br>
-    Telefon: <a href="tel:+381215550147">021 555 0147</a><br>
-    Email: <a href="mailto:info@picerijadunavska.rs">info@picerijadunavska.rs</a>
-  </p>
+<section>
+  <div class="wrap dve-kolone">
+    <div class="info">
+      <p><b>Picerija Dunavska</b></p>
+      <p><strong>Adresa:</strong><br>Dunavska 14, 21000 Novi Sad</p>
+      <p><strong>Telefon za dostavu:</strong><br><a href="tel:+381215550147">021 555 0147</a></p>
+      <p><strong>Email:</strong><br><a href="mailto:info@picerijadunavska.rs">info@picerijadunavska.rs</a></p>
 
-  <p><b>Kako da poručiš picu</b></p>
-  <p>Picu možeš da poručiš telefonom svakog dana od 11 do 23h. Dostava je besplatna za porudžbine preko 1500 dinara, a za manje porudžbine plaća se 150 dinara. Plaćanje je gotovinom ili karticom kod dostavljača. Spisak pica i cene su na stranici <a href="meni.html">ovde</a>.</p>
+      <h3>Radno vreme</h3>
+      <ul class="radno-vreme">
+        <li><span>Ponedeljak - četvrtak</span> <span>10 - 23h</span></li>
+        <li><span>Petak i subota</span> <span>10 - 24h</span></li>
+        <li><span>Nedelja</span> <span>12 - 22h</span></li>
+      </ul>
+    </div>
+    <iframe class="mapa" title="Mapa - Dunavska ulica, Novi Sad" src="https://maps.google.com/maps?q=Dunavska%2014%20Novi%20Sad&amp;z=16&amp;output=embed" loading="lazy"></iframe>
+  </div>
+</section>
 
-  <p><b>Gde se nalazimo</b></p>
-  <p>Lokal je u Dunavskoj ulici, preko puta Dunavskog parka. Najbliži parking je kod Gradske kuće.</p>
-
-  <iframe class="mapa" title="Mapa - Dunavska ulica, Novi Sad" src="https://maps.google.com/maps?q=Dunavska%2014%20Novi%20Sad&amp;z=16&amp;output=embed" loading="lazy"></iframe>
-</main>
+<section class="krem">
+  <div class="wrap">
+    <p><b>Kako radi dostava pice</b></p>
+    <p>Picu možeš da poručiš telefonom svakog dana od 11 do 23h. Dostava je besplatna za porudžbine preko 1500 dinara, a za manje porudžbine plaća se 150 dinara. Plaćanje je gotovinom ili karticom kod dostavljača.</p>
+    <p>Dostavljamo na celoj teritoriji Novog Sada, a do Petrovaradina i Sremske Kamenice uz doplatu od 100 dinara. Spisak pica i cene su u našem <a href="meni.html">ovde</a>.</p>
+  </div>
+</section>
 
 <footer>
-  <p>&copy; 2026 Neven Čobanov</p>
+  <div class="wrap">
+    <div>
+      <h3>Picerija Dunavska</h3>
+      <p>Italijanska pica iz peći na drva u centru Novog Sada.</p>
+    </div>
+    <div>
+      <h3>Adresa</h3>
+      <p>Dunavska 14, Novi Sad</p>
+      <p><a href="tel:+381215550147">021 555 0147</a></p>
+    </div>
+    <div>
+      <h3>Radno vreme</h3>
+      <p>Pon - Čet: 10 - 23h</p>
+      <p>Pet - Sub: 10 - 24h</p>
+      <p>Nedelja: 12 - 22h</p>
+    </div>
+  </div>
+  <p class="copy">&copy; 2026 Neven Čobanov</p>
 </footer>
 
 </body>
