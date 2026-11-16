@@ -326,3 +326,56 @@ footer a {
   text-align: center;
 }
 
+/* ---------- tablet i telefon ---------- */
+@media (max-width: 850px) {
+  .tri-kolone {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 650px) {
+  header .wrap {
+    flex-direction: column;
+    height: auto;
+    padding: 12px 20px;
+  }
+
+  nav {
+    margin-top: 6px;
+  }
+
+  nav a {
+    margin: 0 10px;
+  }
+
+  .hero {
+    padding: 80px 0;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .dugme.svetlo {
+    margin: 12px 0 0;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  section {
+    padding: 45px 0;
+  }
+
+  .dve-kolone,
+  .tri-kolone,
+  footer .wrap {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
